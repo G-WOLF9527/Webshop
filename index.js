@@ -244,6 +244,7 @@ function cout(){
                         del.remove();
                         pricesum = (i1count*1) + (i2count*2) + (i3count*3) + (i4count*4) + (i5count*5) + (i6count*6);
                         summary.textContent = "Price summary: "+pricesum;
+                        flag1 = 0;
                     }
                 }
                 i1btnd.addEventListener('click', deleteitem1)
@@ -259,6 +260,7 @@ function cout(){
                     i1count = 0;
                     pricesum = (i1count*1) + (i2count*2) + (i3count*3) + (i4count*4) + (i5count*5) + (i6count*6);
                     summary.textContent = "Price summary: "+pricesum;
+                    flag1 = 0;
                 }
             } else if (i1count>1){
                 let i1c = document.getElementById("i1c");
@@ -293,11 +295,15 @@ function cout(){
                 function addcount2() {
                     i2count++;
                     i2c.textContent = "In the cart: "+i2count;
+                    pricesum = (i1count*1) + (i2count*2) + (i3count*3) + (i4count*4) + (i5count*5) + (i6count*6);
+                    summary.textContent = "Price summary: "+pricesum;
                 }
                 i2btnl.addEventListener('click', removecount2)
                 function removecount2(e) {
                     i2count--;
                     i2c.textContent = "In the cart: "+i2count;
+                    pricesum = (i1count*1) + (i2count*2) + (i3count*3) + (i4count*4) + (i5count*5) + (i6count*6);
+                    summary.textContent = "Price summary: "+pricesum;
                     if(i2count<1){
                         let del = document.getElementById(e.target.id);
                         del.previousElementSibling.previousElementSibling.previousElementSibling.remove();
@@ -307,6 +313,9 @@ function cout(){
                         del.nextElementSibling.nextElementSibling.remove();
                         del.nextElementSibling.remove();
                         del.remove();
+                        pricesum = (i1count*1) + (i2count*2) + (i3count*3) + (i4count*4) + (i5count*5) + (i6count*6);
+                        summary.textContent = "Price summary: "+pricesum;
+                        flag2 = 0;
                     }
                 }
                 i2btnd.addEventListener('click', deleteitem2)
@@ -322,6 +331,7 @@ function cout(){
                     i2count = 0;
                     pricesum = (i1count*1) + (i2count*2) + (i3count*3) + (i4count*4) + (i5count*5) + (i6count*6);
                     summary.textContent = "Price summary: "+pricesum;
+                    flag2 = 0;
                 }
             }else if (i2count>1){
                 let i2c = document.getElementById("i2c");
@@ -356,11 +366,15 @@ function cout(){
                 function addcount3() {
                     i3count++;
                     i3c.textContent = "In the cart: "+i3count;
+                    pricesum = (i1count*1) + (i2count*2) + (i3count*3) + (i4count*4) + (i5count*5) + (i6count*6);
+                    summary.textContent = "Price summary: "+pricesum;
                 }
                 i3btnl.addEventListener('click', removecount3)
                 function removecount3(e) {
                     i3count--;
                     i3c.textContent = "In the cart: "+i3count;
+                    pricesum = (i1count*1) + (i2count*2) + (i3count*3) + (i4count*4) + (i5count*5) + (i6count*6);
+                    summary.textContent = "Price summary: "+pricesum;
                     if(i3count<1){
                         let del = document.getElementById(e.target.id);
                         del.previousElementSibling.previousElementSibling.previousElementSibling.remove();
@@ -370,6 +384,9 @@ function cout(){
                         del.nextElementSibling.nextElementSibling.remove();
                         del.nextElementSibling.remove();
                         del.remove();
+                        pricesum = (i1count*1) + (i2count*2) + (i3count*3) + (i4count*4) + (i5count*5) + (i6count*6);
+                        summary.textContent = "Price summary: "+pricesum;
+                        flag3 = 0;
                     }
                 }
                 i3btnd.addEventListener('click', deleteitem3)
@@ -385,6 +402,7 @@ function cout(){
                     i3count = 0;
                     pricesum = (i1count*1) + (i2count*2) + (i3count*3) + (i4count*4) + (i5count*5) + (i6count*6);
                     summary.textContent = "Price summary: "+pricesum;
+                    flag3 = 0;
                 }
             }else if (i3count>1){
                 let i3c = document.getElementById("i3c");
@@ -419,11 +437,15 @@ function cout(){
                 function addcount4() {
                     i4count++;
                     i4c.textContent = "In the cart: "+i4count;
+                    pricesum = (i1count*1) + (i2count*2) + (i3count*3) + (i4count*4) + (i5count*5) + (i6count*6);
+                    summary.textContent = "Price summary: "+pricesum;
                 }
                 i4btnl.addEventListener('click', removecount4)
                 function removecount4(e) {
                     i4count--;
                     i4c.textContent = "In the cart: "+i4count;
+                    pricesum = (i1count*1) + (i2count*2) + (i3count*3) + (i4count*4) + (i5count*5) + (i6count*6);
+                    summary.textContent = "Price summary: "+pricesum;
                     if(i4count<1){
                         let del = document.getElementById(e.target.id);
                         del.previousElementSibling.previousElementSibling.previousElementSibling.remove();
@@ -433,6 +455,9 @@ function cout(){
                         del.nextElementSibling.nextElementSibling.remove();
                         del.nextElementSibling.remove();
                         del.remove();
+                        pricesum = (i1count*1) + (i2count*2) + (i3count*3) + (i4count*4) + (i5count*5) + (i6count*6);
+                        summary.textContent = "Price summary: "+pricesum;
+                        flag4 = 0;
                     }
                 }
                 i4btnd.addEventListener('click', deleteitem4)
@@ -448,6 +473,7 @@ function cout(){
                     i4count = 0;
                     pricesum = (i1count*1) + (i2count*2) + (i3count*3) + (i4count*4) + (i5count*5) + (i6count*6);
                     summary.textContent = "Price summary: "+pricesum;
+                    flag4 = 0;
                 }
             }else if (i4count>1){
                 let i4c = document.getElementById("i4c");
@@ -482,11 +508,15 @@ function cout(){
                 function addcount5() {
                     i5count++;
                     i5c.textContent = "In the cart: "+i5count;
+                    pricesum = (i1count*1) + (i2count*2) + (i3count*3) + (i4count*4) + (i5count*5) + (i6count*6);
+                    summary.textContent = "Price summary: "+pricesum;
                 }
                 i5btnl.addEventListener('click', removecount5)
                 function removecount5(e) {
                     i5count--;
                     i5c.textContent = "In the cart: "+i5count;
+                    pricesum = (i1count*1) + (i2count*2) + (i3count*3) + (i4count*4) + (i5count*5) + (i6count*6);
+                    summary.textContent = "Price summary: "+pricesum;
                     if(i5count<1){
                         let del = document.getElementById(e.target.id);
                         del.previousElementSibling.previousElementSibling.previousElementSibling.remove();
@@ -496,6 +526,9 @@ function cout(){
                         del.nextElementSibling.nextElementSibling.remove();
                         del.nextElementSibling.remove();
                         del.remove();
+                        pricesum = (i1count*1) + (i2count*2) + (i3count*3) + (i4count*4) + (i5count*5) + (i6count*6);
+                        summary.textContent = "Price summary: "+pricesum;
+                        flag5 = 0;
                     }
                 }
                 i5btnd.addEventListener('click', deleteitem5)
@@ -511,6 +544,7 @@ function cout(){
                     i5count = 0;
                     pricesum = (i1count*1) + (i2count*2) + (i3count*3) + (i4count*4) + (i5count*5) + (i6count*6);
                     summary.textContent = "Price summary: "+pricesum;
+                    flag5 = 0;
                 }
             }else if (i5count>1){
                 let i5c = document.getElementById("i5c");
@@ -545,11 +579,15 @@ function cout(){
                 function addcount6() {
                     i6count++;
                     i6c.textContent = "In the cart: "+i6count;
+                    pricesum = (i1count*1) + (i2count*2) + (i3count*3) + (i4count*4) + (i5count*5) + (i6count*6);
+                    summary.textContent = "Price summary: "+pricesum;
                 }
                 i6btnl.addEventListener('click', removecount6)
                 function removecount6(e) {
                     i6count--;
                     i6c.textContent = "In the cart: "+i6count;
+                    pricesum = (i1count*1) + (i2count*2) + (i3count*3) + (i4count*4) + (i5count*5) + (i6count*6);
+                    summary.textContent = "Price summary: "+pricesum;
                     if(i6count<1){
                         let del = document.getElementById(e.target.id);
                         del.previousElementSibling.previousElementSibling.previousElementSibling.remove();
@@ -559,6 +597,9 @@ function cout(){
                         del.nextElementSibling.nextElementSibling.remove();
                         del.nextElementSibling.remove();
                         del.remove();
+                        pricesum = (i1count*1) + (i2count*2) + (i3count*3) + (i4count*4) + (i5count*5) + (i6count*6);
+                        summary.textContent = "Price summary: "+pricesum;
+                        flag6 = 0;
                     }
                 }
                 i6btnd.addEventListener('click', deleteitem6)
@@ -574,6 +615,7 @@ function cout(){
                     i6count = 0;
                     pricesum = (i1count*1) + (i2count*2) + (i3count*3) + (i4count*4) + (i5count*5) + (i6count*6);
                     summary.textContent = "Price summary: "+pricesum;
+                    flag6 = 0;
                 }
             }else if (i6count>1){
                 i6c.textContent = "In the cart: "+i6count;
