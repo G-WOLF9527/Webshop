@@ -11,3 +11,6 @@ When I upload this project I seen what i did before and I said "Oh my god! I can
 But I rly want to share this too, because I start with this.
 
 Later I will rewrite this project in another version, but I don't refactor it.
+
+
+And yeah... I realized when I coding I have to use comments... much more comments.
