@@ -10,4 +10,4 @@ I don't get any help in this so I did everything by myself.
 When I upload this project I seen what i did before and I said "Oh my god! I can do this and this and this better."
 But I rly want to share this too, because I start with this.
 
-Later I will rewrite this project, but I don't refactor it.
+Later I will rewrite this project in another version, but I don't refactor it.
